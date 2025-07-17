@@ -40,26 +40,27 @@
                                 </div>
 
                                 <!-- Login Form -->
-                                <form>
+                                <form action="{{route('login')}}" method='POST'>
+                                    @csrf
                                     <!-- Email Input -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                                     </div>
 
                                     <!-- Password Input -->
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                                     </div>
 
                                     <!-- Remember Me & Forgot Password -->
                                     <div class="d-flex justify-content-between align-items-center mb-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="rememberMe">
-                                            <label class="form-check-label" for="rememberMe">
+                                            <!-- <input class="form-check-input" type="checkbox" value="" id="rememberMe"> -->
+                                            <!-- <label class="form-check-label" for="rememberMe">
                                                 Remember me
-                                            </label>
+                                            </label> -->
                                         </div>
                                         <a href="#" class="text-decoration-none">Forgot password?</a>
                                     </div>
@@ -69,25 +70,25 @@
                                         <button type="submit" class="btn btn-primary">Sign In</button>
                                     </div>
                                     
-                                    <div class="divider-text">
+                                    <!-- <div class="divider-text">
                                         <span>OR</span>
-                                    </div>
+                                    </div> -->
 
                                     <!-- Social Login Buttons -->
-                                    <div class="d-grid gap-2">
+                                    <!-- <div class="d-grid gap-2">
                                          <button class="btn btn-light border" type="button">
                                             <i class="fab fa-google me-2"></i> Continue with Google
                                         </button>
                                          <button class="btn btn-light border" type="button">
                                             <i class="fab fa-facebook-f me-2"></i> Continue with Facebook
                                         </button>
-                                    </div>
+                                    </div> -->
 
                                 </form>
 
                                 <!-- Sign Up Link -->
                                 <div class="text-center mt-4">
-                                    <p class="text-muted">Don't have an account? <a href="#" class="fw-bold text-decoration-none">Register to save lives</a></p>
+                                    <p class="text-muted">Don't have an account? <a href="#" class="fw-bold text-decoration-none">Register.</a></p>
                                 </div>
                             </div>
                         </div>
