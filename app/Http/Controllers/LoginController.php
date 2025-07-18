@@ -34,7 +34,15 @@ class LoginController extends Controller
     }
 
     public function dashboard(){
-        
         return view('backend.dashboard');
+    }
+
+    public function logout(){
+        if(Auth::check()){
+            Auth::logout();
+            return redirect()->route('login.form');
+            //session_flush();
+            //session_destroy();
+        }
     }
 }
