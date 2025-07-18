@@ -31,6 +31,9 @@ Route::post('site-settings/update',[SiteSettingController::class,'update'])->nam
 //Login Routes
 Route:: view('login','frontend.login.form')->name('login.form');
 Route:: post('login-submit','LoginController@login')->name('login');
+Route:: get('logout','LoginController@logout')->name('logout');
+
+
 Route:: get('admin','LoginController@dashboard')->name('admin')->middleware('user_type:admin');
 
 // Backend Routes 
