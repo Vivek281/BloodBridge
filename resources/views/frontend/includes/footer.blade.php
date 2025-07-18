@@ -17,7 +17,7 @@
             <a href="{{ $settings['twitter'] ?? '#'}}"><i class="bi bi-twitter-x"></i></a>
             <a href="{{ $settings['facebook'] ?? '#'}}"><i class="bi bi-facebook"></i></a>
             <a href="{{ $settings['instagram'] ?? '#'}}"><i class="bi bi-instagram"></i></a>
-            <a href="{{ $settings['linkedin'] ?? '#'}}"><i class="bi bi-linkedin"></i></a>
+           
           </div>
         </div>
 
