@@ -17,7 +17,7 @@
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-6 d-flex align-items-stretch">
             <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
               <h3>Why Choose BloodBridge?</h3>
               <p>
@@ -29,31 +29,13 @@
             </div>
           </div><!-- End Why Box -->
 
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="d-flex flex-column justify-content-center">
-              <div class="row gy-4">
+          
 
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                    <i class="bi bi-clipboard-data"></i>
-                    <h4>Corporis voluptates officia eiusmod</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                </div><!-- End Icon Box -->
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                    <i class="bi bi-gem"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
-                </div><!-- End Icon Box -->
-
-                <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="col-xl-5 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
                     <i class="bi bi-inboxes"></i>
-                    <h4>Labore consequatur incidid dolore</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4>Make Request For Blood</h4>
+                    <p>Click Here For Urgent Request Of Blood</p>
                   </div>
                 </div><!-- End Icon Box -->
 
@@ -80,28 +62,31 @@
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <h3>About Us</h3>
             <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-            </p>
+              At BloodBridge, we connect those in urgent need of blood with compassionate donors nearby. Our mission is to save lives by building a fast, reliable, and community-driven platform that bridges the gap between hope and help.
+         </p>
             <ul>
               <li>
                 <i class="fa-solid fa-vial-circle-check"></i>
                 <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  <h5>Easy Blood Requests</h5>
+                  <p>Post blood requests quickly and get notified when a matching donor is nearby—no delays, no hassle.
+</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-pump-medical"></i>
                 <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  <h5>Verified Donors</h5>
+                  <p>We ensure all our donors are verified and active, creating a safe and trustworthy environment for both parties.
+</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-heart-circle-xmark"></i>
                 <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  <h5>Life-Saving Community</h5>
+                  <p>Join a growing network of compassionate people dedicated to saving lives because every drop counts.
+</p>
                 </div>
               </li>
             </ul>
@@ -167,7 +152,7 @@
         <p>Bloodbridge exists to ensure,one in need doesnot have to wait. We Bridge the gap between patients and blood</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <!-- <div class="container">
 
         <div class="row gy-4">
 
@@ -180,12 +165,12 @@
                 <h3>DONORS</h3>
               </a>
               <p>Donors are the saviour of humanity,Donors are our heroes.Take a leap and become a reason for someone to be happy</p>
-            </div>
+            </div> -->
       
           </div><!-- End Service Item -->
                 <!-- container for recipient -->
              
-               <div class="container">
+               <!-- <div class="container">
 
         <div class="row gy-4">
 
@@ -198,7 +183,7 @@
                 <h3>RECIPIENT</h3>
               </a>
               <p>Recipient is the one at need whose life can be saved by you,Take a step today,Let's be REAL HEROES</p>
-            </div>
+            </div> -->
 
           </div><!-- End Service Item -->
 
@@ -213,79 +198,7 @@
 
    
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
+    
     </section><!-- /Faq Section -->
 
     <!-- Testimonials Section -->
@@ -307,12 +220,12 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Need assistance? We respond quickly and care deeply.</p>
       </div><!-- End Section Title -->
 
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+      <!-- <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
         <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
+      </div>End Google Maps -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -339,7 +252,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>{{ $settings['email'] ?? 'contact@example.com'}}</p>
+                <p>{{ $settings['email'] ?? 'bloodbridge@gmail.com'}}</p>
               </div>
             </div><!-- End Info Item -->
 
