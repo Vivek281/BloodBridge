@@ -10,7 +10,12 @@ use App\User;
 
 class LoginController extends Controller
 {
-    public function login(Request $request){
+
+        public function index(){
+            return view('frontend.login.form');
+        }
+
+        public function login(Request $request){
         $request->validate([
             'email' => 'required|email',
             'password' =>'required|min:6'

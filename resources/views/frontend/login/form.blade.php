@@ -88,7 +88,7 @@
 
                                 <!-- Sign Up Link -->
                                 <div class="text-center mt-4">
-                                    <p class="text-muted">Don't have an account? <a href="#" class="fw-bold text-decoration-none">Register.</a></p>
+                                    <p class="text-muted">Don't have an account? <a href="{{route('signup.form')}}" class="fw-bold text-decoration-none">Register.</a></p>
                                 </div>
                             </div>
                         </div>

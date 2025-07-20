@@ -1,0 +1,66 @@
+
+/* Custom Styles for BloodBridge Theme (Consistent with Login) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.signup-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.signup-info-side {
+    background-color: #c0392b; /* Darker red background */
+    color: #ffffff;
+    padding: 3rem;
+}
+
+.signup-form-side {
+    padding: 2rem 3rem; /* Adjusted padding for more fields */
+    background-color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+    .signup-form-side {
+        padding: 2rem;
+    }
+    .signup-info-side {
+        display: none;
+    }
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 0.25rem rgba(231, 76, 60, 0.25);
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+a {
+    color: #e74c3c;
+}
+
+a:hover {
+    color: #c0392b;
+}

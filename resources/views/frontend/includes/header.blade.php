@@ -52,9 +52,24 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+              <a class="cta-btn d-none d-sm-block" href="{{route('login.form')}}">Login</a>
+              <a class="cta-btn d-none d-sm-block" href="{{route('signup.form')}}">Signup</a>
+        <!-- @if(auth()->check()) -->
+<!-- 
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div> -->
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Donate / Request for Blood</a>
+          <!-- @else -->
 
+          <!-- @endif -->
       </div>
 
     </div>

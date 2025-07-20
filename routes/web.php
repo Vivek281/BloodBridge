@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SiteSettingController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,10 @@ use App\Http\Controllers\SiteSettingController;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     return view('frontend.index');
 // });
 
 //Frontend Routes
-Route:: view('welcome','welcome');
-Route:: view('master','frontend.layouts.master');
 Route:: view('home','frontend.index')->name('frontend.index'); 
 
 
@@ -29,12 +28,31 @@ Route::get('site-settings',[SiteSettingController::class,'index'])->name('site.s
 Route::post('site-settings/update',[SiteSettingController::class,'update'])->name('site.settings.update');
 
 //Login Routes
-Route:: view('login','frontend.login.form')->name('login.form');
+Route:: get('login','LoginController@index')->name('login.form');
 Route:: post('login-submit','LoginController@login')->name('login');
 Route:: get('logout','LoginController@logout')->name('logout');
 
+// Bacekend after login
+Route::middleware('user_type:admin')->group(function () {
+Route:: get('admin','LoginController@dashboard')->name('admin');
+Route::resource('users', 'UserController')->names([
+    'index' => 'users.index',
+    'create' => 'users.create',
+    'store' => 'users.store',
+    'show' => 'users.show',
+    'edit' => 'users.edit',
+    'update' => 'users.update',
+    'destroy' => 'users.destroy',
+]);
+});
 
-Route:: get('admin','LoginController@dashboard')->name('admin')->middleware('user_type:admin');
+
+
+// Signup Route
+Route:: get('signup','RegisterController@signupForm')->name('signup.form');
+Route:: post('signup-submit','RegisterController@register')->name('signup');
+
+
 
 // Backend Routes 
-Route::view('dashboard','backend.dashboard')->name('backend.dashboard');
+// Route::view('dashboard','backend.dashboard')->name('backend.dashboard');
