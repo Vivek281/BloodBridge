@@ -15,7 +15,11 @@ use App\Http\Controllers\RegisterController;
 */
 
 // Route::get('/', function () {
+<<<<<<< Updated upstream
 //     return view('frontend.index');
+=======
+//     return redirect('/home');
+>>>>>>> Stashed changes
 // });
 
 //Frontend Routes
