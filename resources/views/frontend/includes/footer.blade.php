@@ -1,4 +1,4 @@
- <footer id="footer" class="footer light-background">
+ <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -11,40 +11,26 @@
             <p>{{ $settings['address'] ?? 'A108 Adam Street New York, NY 535022'}}</p>
 
             <p class="mt-3"><strong>Phone:</strong> <span>{{ $settings['phone'] ?? '+1 5589 55488 55' }}</span></p>
-            <p><strong>Email:</strong> <span>{{ $settings['email'] ?? 'contact@example.com'}}</span></p>
+            <p><strong>Email:</strong> <span>{{ $settings['email'] ?? 'bloodbridge11@gmail.com'}}</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="{{ $settings['twitter'] ?? '#'}}"><i class="bi bi-twitter-x"></i></a>
             <a href="{{ $settings['facebook'] ?? '#'}}"><i class="bi bi-facebook"></i></a>
             <a href="{{ $settings['instagram'] ?? '#'}}"><i class="bi bi-instagram"></i></a>
-            <a href="{{ $settings['linkedin'] ?? '#'}}"><i class="bi bi-linkedin"></i></a>
+           
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+         
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
           <ul>
             <li><a href="#">Molestiae accusamus iure</a></li>
             <li><a href="#">Excepturi dignissimos</a></li>
@@ -55,7 +41,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
+          <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Ipsam</a></li>
             <li><a href="#">Laudantium dolorum</a></li>
@@ -75,7 +61,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">Students</a> Distributed by <a href=“https://themewagon.com>Students
+        Designed by <b>Students</b> Distributed by <b>Students</b>
       </div>
     </div>
 

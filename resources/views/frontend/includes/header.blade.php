@@ -3,14 +3,14 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">{{ $settings['email'] ?? 'contact@example.com'}}</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ $settings['phone'] ?? '+1 5589 55488 55' }}</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:bloodbrige@gmail.com">{{ $settings['email'] ?? 'bloodbridge11@gmail.com'}}</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ $settings['phone'] ?? '+977 9706007151' }}</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="{{ $settings['twitter'] ?? '#'}}" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="{{ $settings['facebook'] ?? '#'}}" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="{{ $settings['instagram'] ?? '#'}}" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="{{ $settings['linkedin'] ?? '#'}}" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -29,8 +29,7 @@
             <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
+            
             <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
