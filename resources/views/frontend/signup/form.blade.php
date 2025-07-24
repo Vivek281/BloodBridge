@@ -73,6 +73,20 @@
                                             <option value="recipient" >Recipient</option>
                                         </select>
                                     </div>
+                                    <div class="mb-3">
+                                      <label for="blood_group" class="form-label">Blood Group</label> 
+                                        <select class="form-select" id="blood_group" name="blood_group" required>
+                                            <option selected disabled value="">Select Blood Group...</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                        </select>
+                                    </div>
 
                                     <!-- Password Input -->
                                     <div class="mb-3">

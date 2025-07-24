@@ -21,6 +21,7 @@ class RegisterController extends Controller
                 'name' => 'required|string|max:255',
                 'email' => 'required|email|max:255|unique:users',
                 'role' => 'required|string|in:donor,recipient',
+                'blood_group' => 'required|string|in:A+,A-,B+,B-,AB+,AB-,O+,O-',
                 'password' => 'required|confirmed|min:6 ',
             ]);
 
@@ -29,13 +30,14 @@ class RegisterController extends Controller
                 'name' => $request->name,
                 'email' => $request->email,
                 'role' => $request->role,
+                'blood_group' => $request->blood_group,
                 'password' => Hash::make($request->password),
                 'user_type' => 'user', // default role
             ]);
 
             auth()->login($user); // auto login after registration
 
-            return redirect()->route('frontend.index')->with('success', 'Registration Successful!');
+            return redirect()->route('frontend.index')->with('registration_success', 'Registration Successful!');
 
     }
 }

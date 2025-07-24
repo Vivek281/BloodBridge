@@ -51,7 +51,7 @@ class SiteSettingController extends Controller
                 Setting::updateOrCreate(['key' => 'logo'], ['key' => 'logo', 'value' => $filename]);
                 dd('request');
               
-                }
+            }
                   
                 foreach($request->except('_token', 'logo') as $key => $value){
                     Setting::updateOrCreate(['key' =>$key],['key' => $key ,'value' => $value]);

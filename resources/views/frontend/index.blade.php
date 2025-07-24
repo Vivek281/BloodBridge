@@ -2,7 +2,8 @@
 @section('title','BloodBridge-Home')
 @section('content')
 
- <main class="main">
+ <main class="main container-fluid">
+
 
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
@@ -12,6 +13,32 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+                @if(session()->has('registration_success'))
+                  <div x-data="{ show: true }" x-show="show" class="alert alert-success fixed top-0 right-0 m-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded" role="alert">
+                      <div>
+                          @if(auth()->user()->role == 'donor')
+                              <h3>Thank you for registering as a donor! We will notify you when someone requests for blood.</h3>
+                          @elseif(auth()->user()->role == 'recipient')
+                             <h3>You've been registered as a recipient. You can now make requests for blood.</h3>
+                          @else
+                              {{ session('success', 'Registration successful.') }}
+                          @endif
+                      </div>
+                      <button @click="show = false" class="ml-4 text-green-700 hover:text-green-900 focus:outline-none">
+                          &times; <!-- This is the close icon -->
+                      </button>
+                  </div>
+                @endif
+                    @if(session()->has('request_success'))
+                            <div x-data="{ show: true }" x-show="show" class="alert alert-success fixed top-0 right-0 m-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded" role="alert">
+                                <div>
+                                    {{ session('request_success') }}
+                                </div>
+                                <button @click="show = false" class="ml-4 text-green-700 hover:text-green-900 focus:outline-none">
+                                    &times; <!-- This is the close icon -->
+                                </button>
+                            </div>
+                        @endif
           <h2>WELCOME TO {{ $settings['sitename'] ?? 'BLOODBRIDGE'}}</h2>
           <p>We are here to make sure no one waits for blood.</p>
         </div><!-- End Welcome -->
@@ -34,8 +61,8 @@
                 <div class="col-xl-5 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
                     <i class="bi bi-inboxes"></i>
-                    <h4>Make Request For Blood</h4>
-                    <p>Click Here For Urgent Request Of Blood</p>
+                    <h4>Make Requests</h4>
+                    <p>We will find the closest donors around your location keeping track of your blood compatibility.</p>
                   </div>
                 </div><!-- End Icon Box -->
 

@@ -2,7 +2,7 @@
 @section('title','Users')
 @section('content')
 <div class="container-fluid">
-    <h2>All Users</h2>
+    <h2 style="color:#A5243D; font-family:helvetica;">All Users</h2>
     <a href="{{ route('users.create') }}" class="btn btn-success mb-2">Add New User</a>
     <div class="table-responsive">
         <table class="table">

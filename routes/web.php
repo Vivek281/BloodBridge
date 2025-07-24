@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SiteSettingController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\BloodRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,21 @@ Route::resource('users', 'UserController')->names([
     'destroy' => 'users.destroy',
 ]);
 });
+
+
+//Request form route
+Route:: view('blood-request-form','controls.requests.form')->name('request.form');
+//Request form in frontend and the Request table in backend
+Route::resource('blood-request', 'BloodRequestController')->names([
+    'index' => 'blood-request.index',
+    'create' => 'blood-request.create',
+    'store' => 'blood-request.store',
+    'show' => 'blood-request.show',
+    'edit' => 'blood-request.edit',
+    'update' => 'blood-request.update',
+    'destroy' => 'blood-request.destroy',
+    ]);
+
 
 
 

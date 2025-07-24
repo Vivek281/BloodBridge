@@ -1,5 +1,5 @@
  <header id="header" class="header sticky-top">
-
+ <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
@@ -51,24 +51,28 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-              <a class="cta-btn d-none d-sm-block" href="{{route('login.form')}}">Login</a>
-              <a class="cta-btn d-none d-sm-block" href="{{route('signup.form')}}">Signup</a>
-        <!-- @if(auth()->check()) -->
-<!-- 
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div> -->
+        <nav id="navmenu" class="navmenu"> 
+              <ul>
+                 @if(auth()->check())
+                 <li><a class="cta-btn d-none d-sm-block" href="{{route('request.form')}}">Request for blood</a></li>
+                  <li><a  href="#profile"class="text-gray-400">Logged in as: {{auth()->check() ? ucwords(auth()->user()->name) : ''}}
+                    <!-- <img class="img-profile rounded-circle"src="backend/img/undraw_profile.svg"> -->
+                  </a></li>
+                  <li><a  href="{{route('logout')}}"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a></li>
+                
+                @else
+                <li><a class="cta-btn d-none d-sm-block" href="{{route('login.form')}}">Login</a></li> 
+                <li><a class="cta-btn d-none d-sm-block" href="{{route('signup.form')}}">Signup</a></li>
+                    @endif
+            </ul>           
+          </nav>
 
-          <!-- @else -->
+       
 
-          <!-- @endif -->
+
+          
+
+          
       </div>
 
     </div>
