@@ -1,18 +1,6 @@
 <?php
 
-use App\Http\Controllers\SiteSettingController;
-use App\Http\Controllers\RegisterController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use Illuminate\Support\Facades\Route;
 
 // Homepage Route
 Route::get('/', function () {
@@ -22,18 +10,25 @@ Route::get('/', function () {
 // Frontend Routes
 Route::view('home', 'frontend.index')->name('frontend.index');
 
-// Settings route
-Route::get('site-settings', [SiteSettingController::class, 'index'])->name('site.settings');
-Route::post('site-settings/update', [SiteSettingController::class, 'update'])->name('site.settings.update');
+// Site Settings Routes
+Route::get('site-settings', 'SiteSettingController@index')->name('site.settings');
+Route::post('site-settings/update', 'SiteSettingController@update')->name('site.settings.update');
 
 // Login Routes
 Route::get('login', 'LoginController@index')->name('login.form');
 Route::post('login-submit', 'LoginController@login')->name('login');
 Route::get('logout', 'LoginController@logout')->name('logout');
 
-// Backend after login
+// Signup Routes
+Route::get('signup', 'RegisterController@signupForm')->name('signup.form');
+Route::post('signup-submit', 'RegisterController@register')->name('signup');
+
+// Protected Routes for Admin
 Route::middleware('user_type:admin')->group(function () {
+
     Route::get('admin', 'LoginController@dashboard')->name('admin');
+    Route::get('dashboard', 'LoginController@dashboard')->name('dashboard');
+
     Route::resource('users', 'UserController')->names([
         'index' => 'users.index',
         'create' => 'users.create',
@@ -44,10 +39,3 @@ Route::middleware('user_type:admin')->group(function () {
         'destroy' => 'users.destroy',
     ]);
 });
-
-// Signup Route
-Route::get('signup', 'RegisterController@signupForm')->name('signup.form');
-Route::post('signup-submit', 'RegisterController@register')->name('signup');
-
-// Backend Routes (Optional)
-// Route::view('dashboard','backend.dashboard')->name('backend.dashboard');
