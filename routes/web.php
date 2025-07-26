@@ -15,9 +15,7 @@ use App\Http\Controllers\BloodRequestController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('frontend.index');
-// });
+
 
 //Frontend Routes
 Route:: view('home','frontend.index')->name('frontend.index'); 

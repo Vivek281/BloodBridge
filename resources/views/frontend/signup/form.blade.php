@@ -99,6 +99,18 @@
                                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                                         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirm your Password" required>
                                     </div>
+                                    
+                                    <!-- Phone -->
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="number" class="form-control" id="phone" name="phone" placeholder="0123456789" required>
+                                    </div>
+
+                                    <!-- Location Input -->
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Location</label>
+                                        <input type="text" class="form-control" name="location" id="location" placeholder="e.g., City, State or Hospital Address" required>
+                                    </div>
 
                                     <!-- Signup Button -->
                                     <div class="d-grid mt-4">

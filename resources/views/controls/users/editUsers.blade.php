@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+    <h2 style="color:#A5243D; font-family:helvetica;">Edit User</h2>
     <form method="POST" action="{{ route('users.update', $user->id) }}">
         @csrf
         @method('PUT')

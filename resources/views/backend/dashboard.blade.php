@@ -20,8 +20,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                                Total Users</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">1000+</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -38,8 +38,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                                Services</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Not Added Yet</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -55,11 +55,11 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Requests(Monthly)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">200-300</div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -317,11 +317,8 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                        CSS bloat and poor page performance. Custom CSS classes are used to create
-                                        custom components and custom utility classes.</p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
+                                    <p>The development of BloodBridge followed a modular and user-focused approach aimed at solving the problem of delayed blood donations. </p>
+                                    <p class="mb-0">The project was divided into key components like user authentication, blood request handling, location tracking, and notifications. We used Laravel for backend development, along with HTML, CSS, JavaScript, and MySQL for a clean, scalable structure. Features were implemented incrementally, allowing continuous testing and improvement. Special attention was given to usability and emergency responsiveness, making the platform simple yet effective for both donors and recipients..</p>
                                 </div>
                             </div>
 

@@ -23,6 +23,8 @@ class RegisterController extends Controller
                 'role' => 'required|string|in:donor,recipient',
                 'blood_group' => 'required|string|in:A+,A-,B+,B-,AB+,AB-,O+,O-',
                 'password' => 'required|confirmed|min:6 ',
+                'phone' => 'required|digits:10',
+                'location' => 'required|string',
             ]);
 
             // Create user
@@ -32,6 +34,8 @@ class RegisterController extends Controller
                 'role' => $request->role,
                 'blood_group' => $request->blood_group,
                 'password' => Hash::make($request->password),
+                'phone' => $request->phone,
+                'location' => $request->location,
                 'user_type' => 'user', // default role
             ]);
 

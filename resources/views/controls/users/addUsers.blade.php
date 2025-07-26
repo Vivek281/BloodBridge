@@ -2,7 +2,7 @@
 @section('title', 'Users')
 @section('content')
 <div class="container">
-    <h2>Add New Users</h2>
+    <h2 style="color:#A5243D; font-family:helvetica;">Add New Users</h2>
     <form method="POST" action="{{ route('users.store') }}">
         @csrf
         <div class="mb-3">
